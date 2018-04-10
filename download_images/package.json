@@ -1,0 +1,13 @@
+{
+    "name": "image-downloader",
+    "version": "0.0.1",
+    "description": "Downloads a list of image files to a training data folder",
+    "main": "download-files.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+    },
+    "author": "",
+    "license": "ISC"
+}
