@@ -7,7 +7,7 @@ baseUrl = "http://api.gbif.org/v1/occurrence/search"
 
 # Set up the parameters we want to pass to the API.
 parameters = {
-    "taxonKey": "7493935",
+    "taxonKey": "2685775",
     "basisOfRecord": "HUMAN_OBSERVATION",
     "mediaType": "StillImage",
     "limit": "100"
@@ -47,6 +47,6 @@ while paging < count:
 
     paging += 100
 
-output = open('Eucalyptus.txt', 'w')
+output = open('Pseudotsuga.txt', 'w')
 for item in urls:
   output.write("%s\n" % item)
