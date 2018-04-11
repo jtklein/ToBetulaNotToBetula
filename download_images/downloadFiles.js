@@ -73,7 +73,7 @@ function downloadImage(url, folder, index, callback) {
             .autoOrient()
             .write(resized, err => {
               if (err) {
-                l(i, err);
+                l(index, err);
               }
             });
           callback();
