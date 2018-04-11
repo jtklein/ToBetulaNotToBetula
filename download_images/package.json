@@ -2,11 +2,16 @@
     "name": "image-downloader",
     "version": "0.0.1",
     "description": "Downloads a list of image files to a training data folder",
-    "main": "download-files.js",
+    "main": "downloadFiles.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
+        "async": "^2.6.0",
+        "gm": "^1.23.1",
+        "is-corrupted-jpeg": "^1.0.2",
+        "request": "^2.85.0",
+        "uuid": "^3.2.1"
     },
     "author": "",
     "license": "ISC"
