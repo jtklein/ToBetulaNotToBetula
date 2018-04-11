@@ -105,7 +105,6 @@ const urls = fs
   .readFileSync(process.argv[2], "utf8")
   .toString()
   .split("\n");
-const slicedUrls = urls.splice(60, urls.length - 60);
 console.log(urls);
 
 var index = 0;
