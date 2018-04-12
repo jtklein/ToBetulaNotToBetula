@@ -1,3 +1,7 @@
 node_modules/**/*
 .vscode/*
 .DS_Store
+*/training_data/**/*
+
+*/Classifier.model/**/*
+*/data.sframe/**/*
