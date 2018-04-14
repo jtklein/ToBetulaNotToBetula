@@ -4,9 +4,9 @@ import os
 print "About to use model"
 
 # Load the filter label model
-model = tc.load_model('Classifier.model')
+model = tc.load_model('LabelFilter.model')
 
-# For each directory in the traiing_data set
+# For each directory in the project training data set
 for x in os.listdir('../download_images/training_data'):
     print "Predicting for images in %s" % x
     
@@ -16,8 +16,8 @@ for x in os.listdir('../download_images/training_data'):
     # Predict label on input images
     data['predictions'] = model.predict(data)
 
-    # Write to file
-    output = open('%s.txt' % x, 'w')
-    for i in data:
-        output.write("%s %s\n" % (i['predictions'], i['path']) )
-    output.close()
+# Write to file
+output = open('./results/label/%s.txt' % x, 'w')
+for i in data:
+    output.write("%s %s\n" % (i['predictions'], i['path']) )
+output.close()
