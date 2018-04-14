@@ -1,9 +1,9 @@
 import turicreate as tc
 
-print "About to start learning data from /training_data/label"
+print "About to start learning data from /training_data/trunk"
 
 # Load images from this directory
-data = tc.image_analysis.load_images('./training_data/label', with_path=True)
+data = tc.image_analysis.load_images('./training_data/trunk', with_path=True)
 
 # From the path-name, create a label column
 data['label'] = data['path'].apply(lambda path: path.split("/")[-2])
@@ -26,7 +26,7 @@ metrics = model.evaluate(test_data)
 print(metrics['accuracy'])
 
 # # Save the model for later use in Turi Create
-model.save('LabelFilter.model')
+model.save('TrunkFilter.model')
 
 # Export for use in Core ML
-model.export_coreml('LabelFilter.mlmodel')
+model.export_coreml('TrunkFilter.mlmodel')
