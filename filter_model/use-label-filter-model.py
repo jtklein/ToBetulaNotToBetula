@@ -16,8 +16,8 @@ for x in os.listdir('../download_images/training_data'):
     # Predict label on input images
     data['predictions'] = model.predict(data)
 
-# Write to file
-output = open('./results/label/%s.txt' % x, 'w')
-for i in data:
-    output.write("%s %s\n" % (i['predictions'], i['path']) )
-output.close()
+    # Write to file
+    output = open('./results/label/%s.txt' % x, 'w')
+    for i in data:
+        output.write("%s %s\n" % (i['predictions'], i['path']) )
+    output.close()
