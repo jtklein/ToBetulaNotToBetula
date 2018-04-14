@@ -3,7 +3,7 @@ node_modules/**/*
 .DS_Store
 */training_data/**/*
 
-*/Classifier.model/**/*
-*/LabelFilter.model/**/*
-*/TrunkFilter.model/**/*
+*/Classifier.*/**/*
+*/LabelFilter.*/**/*
+*/TrunkFilter.*/**/*
 */data.sframe/**/*
