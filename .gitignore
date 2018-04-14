@@ -4,4 +4,6 @@ node_modules/**/*
 */training_data/**/*
 
 */Classifier.model/**/*
+*/LabelFilter.model/**/*
+*/TrunkFilter.model/**/*
 */data.sframe/**/*
