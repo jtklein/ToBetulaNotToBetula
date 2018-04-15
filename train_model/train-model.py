@@ -11,7 +11,8 @@ data['label'] = data['path'].apply(lambda path: path.split("/")[-2])
 print "Labels created"
 
 # Save the data for future use
-data.save('data.sframe')
+# data.save('data.sframe')
+print "Skipped"
 print "Data saved"
 data.explore()
 
@@ -24,11 +25,11 @@ model = tc.image_classifier.create(train_data, target='label')
 print "Model created"
 
 # # Save the model for later use in Turi Create
-model.save('Betula.model')
+model.save('Betula2.model')
 print "Model saved"
 
 # Export for use in Core ML
-model.export_coreml('Betula.mlmodel')
+model.export_coreml('Betula2.mlmodel')
 print "Model exported to CoreML"
 
 # Save predictions to an SArray
